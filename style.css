@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background-color: #002B3F;
+    color: black;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 180%;
+    margin-left: 30px;
+}
+
+.area {
+    margin-left: 250px;
+}
+
+main, header {
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #37474F;
+    overflow: hidden;
+    transition: left 0.3s ease;
+    z-index: 2;
+    padding-top: 80px;
+    border-right: 5px solid #FEFBEB;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-nav ul li {
+    margin: 20px 0;
+  }
+  
+  .side-nav ul li a {
+    color: #FEFBEB;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    text-align: right;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+header {
+    background-color: #FEFBEB;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 270%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-size: 200%;
+}
+
+h6 {
+    font-size: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 20%;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9AADBF;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #6CABDD;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #FEFBEB;
+    border-radius: 8px;
+    border-width: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p:not(.caption, .caption2) {
+    text-indent: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid #002B3F;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #FEFBEB;
+    overflow: hidden;
+}
+
+.IconPhoto, .IconText {
+    padding: 1px;
+
+}
+
+.IconPhoto {
+    width: 39%;
+    overflow: hidden;
+    position: relative;
+}
+
+.IconText {
+    width: 59%;
+}
+
+.IconPhoto img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    border-radius: 5px;
+    object-fit: contain;
+    padding-bottom: 10px;
+}
+
+.music {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 75%
+}
+
+.latinmusic {
+    display: flex;
+    gap: 2px;
+}
+
+.latinbox {
+    flex: 1;
+}
+
+.latinbox img {
+    width: 100%;
+    height: auto;
+}
+
+.source {
+    margin-left: 20px;
+    text-indent: -20px;
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex-direction: column;
+    }
+    .IconPhoto, .IconText {
+        width: 100%;
+    }
+}
