@@ -20,6 +20,12 @@
       }, 'google_translate_element');
     }
 
+    function changeLanguage(language) {
+        var translateElement = google.translate.TranslateElement;
+        var translate = new translateElement({pageLanguage: document.documentElement.lang, includedLanguages: 'en, es'}, 'google_translate_element');
+        translate.translatePage(language);
+    }
+      
     // Function to dynamically change the link text based on current language
     function updateLanguageText() {
       var lang = document.documentElement.lang; // Get the current language from the <html> tag
